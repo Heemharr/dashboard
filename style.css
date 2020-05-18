@@ -1,0 +1,258 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(178, 189, 230);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;  
+    background-image: url(./images-svg/Oval_oxhoyi.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: 50%;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(1fr 1fr 1fr);
+    grid-template-rows: repeat(1fr 1fr 1fr);
+    gap: 1rem;
+}
+.user-info {
+    grid-column: 1/4;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+.user-info .nav {
+    font-size: 18px;
+    
+    margin: 0 10px;
+}
+.user-info .nav span {
+     margin: 0 15px;
+}
+.user-info .nav span a {
+    color: #7e6f52;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color .4s;
+}
+.user-info .nav span a:hover,
+.user-info .nav span a:active {
+    color: rgb(56, 49, 33);
+}
+.user-info .profile {
+    padding: 5px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+.profile span {
+    background-color: #9b7cd4;
+    color: white;
+    padding: 10px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin: 0 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.profile span img{
+    height: auto;
+    width: 24px;
+    padding: 0;
+    margin: 0 10px;
+}
+.profile img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 0 1.5rem;
+}
+.profile .notifications {
+    height: auto;
+    width: 18px;
+}
+.profile div {
+    position: relative;
+    display: flex;
+    width: 50px;
+}
+.profile div span {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #9b7cd4;
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 4px 5px;
+    display: flex;
+    justify-content: center;
+    margin-left: 1.8rem;
+}
+
+.analysis1 {
+    background-color: rgb(19, 19, 63);
+    grid-row: 2/4;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin-right: 1rem;
+}
+.analysis1 img {
+    height: auto;
+    width: 50%;
+}
+.analysis1 p {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+.analysis1 div {
+    background-color: #9b7cd4;
+    color: white;
+    padding: 1rem 4rem;
+    border-radius: 4px;
+    margin: 2rem auto;
+}
+.analysis2{
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 20px;
+}
+.analysis2 span {
+    font-weight: 600;
+    font-size: 30px;
+}
+.analysis3 {
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 20px;
+    position: relative;
+}
+.analysis3 p span {
+    font-weight: 600;
+    font-size: 30px;
+}
+.analysis3 .graph-description {
+    position: absolute;
+    width: 65px;
+    height: 50px;
+    background-color: rgb(19, 19, 63);
+    z-index: 1;
+    right: 12px;
+    bottom: 38px;
+    box-shadow: 0px 4px 4px rgb(169, 169, 196);
+    border-radius: 2px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.analysis3 .graph-description::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #8f85c5;
+    position: absolute;
+    left: -18px;
+    border-radius: 50%;
+}
+.analysis3 .graph-description-date {
+    font-size: 10px;
+}
+
+.analysis4 {
+    grid-column: 2/4;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+.first, .second, .third {
+    display: flex;
+    flex-direction: column;
+}
+.first .progress-title,
+.second .progress-title,
+.third .progress-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.first .progress-bar1 {
+    background-color: #7768ca;
+    width: 130px;
+    height: 12px;
+    border: none;
+    border-radius: 15px 0 0 15px;
+    margin-right: 3px;
+}
+.analysis4 .first span {
+    background-color: #7768ca;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 10px 0 0;
+}
+.analysis4 .second .progress-bar2{
+    background-color: #8f85c5;
+    width: 200px;
+    height: 12px;
+    border: none;
+    border-radius: 0px;
+    margin-right: 3px;
+}
+.analysis4 .second span {
+    background-color: #8f85c5;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 10px 0 0;
+}
+.analysis4 .third .progress-bar3 {
+     background-color: #afa8d6;
+    width: 280px;
+    height: 12px;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+}
+.analysis4 .third span {
+   background-color: #afa8d6;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 10px 0 0;
+}
+
